@@ -1,4 +1,4 @@
-import GridLoader from "react-spinners/GridLoader";
+import PacmanLoader from "react-spinners/GridLoader";
 
 export default function Loader() {
   const override = {
@@ -8,9 +8,8 @@ export default function Loader() {
   };
 
   return (
-    <GridLoader
-      color={"darkblue"}
-      size={20}
+    <PacmanLoader
+      color={"greenyellow"}
       speedMultiplier={0.85}
       cssOverride={override}
     />

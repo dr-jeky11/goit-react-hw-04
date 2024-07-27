@@ -10,7 +10,6 @@ import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import Loader from "../Loader/Loader";
 import LoadMoreBtn from "../LoadMoreBtn/LoadMoreBtn";
 import ImageModal from "../ImageModal/ImageModal";
-import Welcome from "../Welcome/Welcome";
 
 const notify = () =>
   toast.error("There are no photos yet", {
@@ -103,7 +102,6 @@ export default function App() {
     <div className={s.container}>
       <SearchBar onSearch={getImages} onShowFav={handleShowFav} />
       <main>
-        {!searchQuery && <Welcome />}
         {photos.length > 0 && (
           <ImageGallery openModal={openModal} images={photos} />
         )}

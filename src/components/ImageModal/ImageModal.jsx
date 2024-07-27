@@ -69,7 +69,7 @@ export default function ImageModal({
       onAfterClose={handleBodyClassRemove}>
       <div className={s.content}>
         <div className={s.btnGroup}>
-          <button type="button" className={css.favBtn} onClick={handleAddToFav}>
+          <button type="button" className={s.favBtn} onClick={handleAddToFav}>
             {isAdded ? (
               <RiStarFill size={28} color="darkblue" />
             ) : (
@@ -119,7 +119,7 @@ export default function ImageModal({
             <p className={s.name}>{name}</p>
             <p>{location}</p>
           </div>
-          <p className={css.date}>{formatDate(created_at)}</p>
+          <p className={s.date}>{formatDate(created_at)}</p>
         </div>
       </div>
     </Modal>

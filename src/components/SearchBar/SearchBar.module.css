@@ -1,5 +1,5 @@
 .header {
-  background-color: darkblue;
+  background-color: greenyellow;
   padding: 10px 0;
   position: relative;
 }
@@ -15,7 +15,7 @@
 .logo {
   font-family: "Kanit", sans-serif;
   font-size: 22px;
-  color: white;
+  color: lightslategray;
   font-weight: 600;
   cursor: pointer;
 }
@@ -32,7 +32,7 @@
   border: none;
   border-radius: 4px;
   background-color: rgba(220, 220, 220, 0.377);
-  color: white;
+  color: lightslategray;
   transition: background-color 250ms ease-in-out;
   font-size: 18px;
 }
@@ -95,7 +95,7 @@
   border: none;
   cursor: pointer;
 
-  color: white;
+  color: lightslategray;
   font-size: 18px;
   display: flex;
   align-items: center;

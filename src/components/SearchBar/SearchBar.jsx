@@ -52,15 +52,15 @@ export default function SearchBar({ onSearch, onShowFav }) {
               name="search"
               autoComplete="off"
               autoFocus
-              placeholder="Search images..."
+              placeholder="Search..."
             />
             <button type="submit" className={s.btn}>
-              <RiSearchLine size={22} color="white" />
+              <RiSearchLine size={22} color="lightslategray" />
             </button>
           </div>
         </form>
         <button type="button" className={s.favBtn} onClick={handleShowFav}>
-          <RiStarFill size={28} color="white" />
+          <RiStarFill size={28} color="lightslategray" />
           Favorites
         </button>
       </div>
