@@ -1,6 +1,9 @@
 import toast, { Toaster } from "react-hot-toast";
-import s from "./SearchBar.modules.css";
-import { RiSearchLine, RiStarFill } from "react-icons/ri";
+
+import { RiSearchLine } from "react-icons/ri";
+import { RiStarFill } from "react-icons/ri";
+
+import s from "./SearchBar.module.css";
 
 const notify = () =>
   toast.error("Please enter your query.", {
@@ -16,7 +19,7 @@ const notify = () =>
     },
   });
 
-export const SearchBar = ({ onSearch, onShowFav }) => {
+export default function SearchBar({ onSearch, onShowFav }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     const inputValue = e.target.elements.search.value.trim();
@@ -39,7 +42,7 @@ export const SearchBar = ({ onSearch, onShowFav }) => {
     <header className={s.header}>
       <div className={s.container}>
         <a href="./index.html" className={s.logo}>
-          Image<span className={s.colorLogo}>Ga11ery</span>
+          <span className={s.colorLogo}>Ga11ery</span>
         </a>
         <form onSubmit={handleSubmit} className={s.form}>
           <div className={s.formContainer}>
@@ -63,4 +66,4 @@ export const SearchBar = ({ onSearch, onShowFav }) => {
       </div>
     </header>
   );
-};
+}

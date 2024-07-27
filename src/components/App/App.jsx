@@ -43,7 +43,6 @@ export default function App() {
 
   const [favorites, setFavorites] = useState([]);
   const [isFavOpen, setIsFavOpen] = useState(false);
-  // const [photoIdToRemove, setPhotoIdToRemove] = useState(null);
 
   const getImages = (query) => {
     setPhotos([]);

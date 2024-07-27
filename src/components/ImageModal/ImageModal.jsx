@@ -2,7 +2,7 @@ import Modal from "react-modal";
 
 import { RiCloseLargeFill, RiStarLine, RiStarFill } from "react-icons/ri";
 
-import { formatDate } from "../../helpers/formatDate";
+import { formatDate } from "../../helpers/formDate";
 
 import s from "./ImageModal.module.css";
 import { useState } from "react";
@@ -52,7 +52,6 @@ export default function ImageModal({
   const handleAddToFav = () => {
     if (isAdded) {
       setIsAdded(false);
-      //logic for removal
       return;
     }
     onAddToFav(imageData);
