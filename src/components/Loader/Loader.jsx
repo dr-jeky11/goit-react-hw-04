@@ -1,4 +1,4 @@
-import PacmanLoader from "react-spinners/GridLoader";
+import PacmanLoader from "react-spinners/PacmanLoader";
 
 export default function Loader() {
   const override = {
